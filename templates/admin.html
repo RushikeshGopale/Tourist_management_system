@@ -1,0 +1,9 @@
+<h2>Admin – All Bookings</h2>
+<table border="1">
+<tr><th>User</th><th>Place</th><th>Date</th><th>Persons</th></tr>
+{% for b in data %}
+<tr>
+<td>{{b[0]}}</td><td>{{b[1]}}</td><td>{{b[2]}}</td><td>{{b[3]}}</td>
+</tr>
+{% endfor %}
+</table>

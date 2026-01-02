@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+background:url('/static/images/tour_bg.jpeg');
+background-size:cover;
+background-attachment:fixed;
+}
+.overlay{
+background:rgba(0,0,0,0.6);
+min-height:100vh;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<nav class="navbar navbar-dark bg-dark">
+<div class="container-fluid">
+<span class="navbar-brand fw-bold">🚌 Naik Sai Tourist</span>
+<a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+</div>
+</nav>
+
+<div class="container mt-5 text-center">
+<h2>Welcome {{username}}</h2>
+<p class="lead">Explore India with comfort & safety</p>
+
+<div class="row justify-content-center mt-4">
+
+<div class="col-md-4">
+<div class="card p-4 shadow">
+<h5>🌍 Tourist Places</h5>
+<p>Book your dream destination</p>
+<a href="/places" class="btn btn-primary">View Places</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 shadow">
+<h5>📋 My Bookings</h5>
+<p>View & manage bookings</p>
+<a href="/my_bookings" class="btn btn-success">My Bookings</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
